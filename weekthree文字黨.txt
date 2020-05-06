@@ -1,0 +1,34 @@
+1、是物件導向的設計方法中將抽象性函示部分細節包裝及隱藏起來，同時防止外界呼叫，
+好處：增加代碼安全性，降低複雜度提高體系結構強度，將操作資料的方法和資料綁在一起
+
+2、
+enum是一種列舉清單，可以根據自己的定義來使用資料，具有屬性和現實接口
+
+讓程式的可讀性更高
+
+3、
+enum class CardType(val color:String){
+    SILVER("gray"),
+    GOLD("yellow"),
+    PLATINUM("black")
+}
+
+fun main(array: Array<String>){
+    val color = CardType.GOLD.color
+    println(color)
+    }
+
+4、
+Linear Layout線性佈局，主要是利用水平線以及垂直線去做排版，不能重疊
+也不能靈活佈局用於簡單頁面
+
+Relative Layout相對位置佈局，需要有一個參照物，指定位於參照物的哪個方向
+相對靈活
+
+5、
+ConstraintLayout約束佈局
+（1)效能優勢，以往的佈局層次越高效能開銷越大，而ConstraintLayout只需要一層就搞定
+（2）大小距離都是以比例來做設定，適應性更好
+（3)視覺化編寫，許多layout都是靠撰寫xmal來排版，但ConstraintLayout靠拖拉的方式更為直觀
+
+
